@@ -2,6 +2,7 @@ import random
 def main():
     number = random.randint(1,10)
     guess = None
+    Attempts = 0
     print("Welcome to the Random Number's Game!")
     print("The program has chose a number between 1 and 10. Can you guess it?")
 
@@ -11,7 +12,7 @@ def main():
         except ValueError:
             print("That's not a number. Try again.")
             continue
-
+        Attempts = Attempts+1
 
         if guess < number:
             print("Your guess is too low.")
@@ -19,6 +20,7 @@ def main():
             print("Your guess is too high.")
         else:
             print("You guessed it!")
+            print("You guessed in "+ str(Attempts))
             break
 
 # Python convention for running the program
