@@ -1,14 +1,17 @@
 import random
 def main():
-    number = random.randint(1,10)
+    
     guess = None
     Attempts = 0
     print("Welcome to the Random Number's Game!")
-    print("The program has chose a number between 1 and 10. Can you guess it?")
-
+    min = int(input("Choose your minimum number "))
+    max = int(input("Choose your maximum number "))
+    number = random.randint(min,max)
+    print("The program has chosen a number between " + str(min) + " and " + str(max) + " Can you guess it?")
+    
     while guess != number: # keep asking the user for guesses until they guess correctly
         try:
-            guess = int(input("Make a guess between 1 and 10: "))
+            guess = int(input("Make a guess between "+ str(min) + " and " + str(max) +": "))
         except ValueError:
             print("That's not a number. Try again.")
             continue
