@@ -15,7 +15,7 @@ python guess.py
 
 ## Contributing
 - Fork the repository
-- Create a branch named after the issue or feature you are contributing your work towards
+- Create a branch named `issue-#` where the `#` is the issue number your branch addresses.
 - Submit a PR against the development branch
 
 To see what issues we need help with check out the repositories' issues page.
