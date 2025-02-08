@@ -7,7 +7,7 @@ def main():
 
     while guess != number: # keep asking the user for guesses until they guess correctly
         try:
-            guess = int(input("Make a guess between 1 and 15: "))
+            guess = int(input("Make a guess between 1 and 10: "))
         except ValueError:
             print("That's not a number. Try again.")
             continue
